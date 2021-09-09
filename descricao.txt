@@ -1,0 +1,69 @@
+Calculo de área
+Tem que exibir
+*) Largura
+*) Altura
+*) Área
+*) Total da area em metros quadrados
+*) Quantas chapas vão dar (Levando em consideração que a chapa tem 5,04)
+
+tamanho: 2,80x1,80
+
+
+Cadastro do cliente
+1) Nome completo
+2) Telefone
+3) Se for realizar entrega pegar o endereço completo
+
+
+Processo da pia de cozinha reta
+
+1) Pegar largura e profundidade da pia
+2) Perguntar se vai ter espelho e quais lados da pia vão tocar a parede:
+2.1) Tamanho padrão do espelho é de 8 a 10 cm;
+2.2) Aonde tocar a parede vai ter espelho ao invés de guanição;
+
+
+3) Perguntar se a pia é apoiada ou chumbd;
+3.1) Chumbada são dois (02) a cinco (05) centrímetro a mais
+3.2) O cliente que escolhe o tamanho, se não souber coloca apenas dois (02);
+
+
+4) Se a pessoa tem cuba ou vai comprar:
+4.1) Cuba custa 300 para os tr(03) tamanho:
+4.1.1) pequena: xxx
+4.1.2) media: xxx
+4.1.3) grande: xxx
+4.2) Cuba tem que ficar centralizada com o ponto de água
+
+5) se já tem ponto de água, para saber a localizacao da cuba
+5.1) Se a pessoa não tiver, pergunta se pode colocar centralizado;
+5.1.1) Se a pessoa não quiser centralizado, a distância da parede até a cuba;
+5.1.2) Se a pessoa não quiser centralizado, a distânca da parede até o ponto da água;
+5.2) Se a pessoa já tem o ponto de água, pergunta a distância da parede até o ponto ou da extremidade até o ponto
+
+
+6) Pergunta se vai ter área seca;
+6.1) Se tiver cooktop tem que ter parte seca;
+6.2) Parte seca pode ser na direita ou na esquerda os nos dois (02) lados;
+6.2.1) Sempre tentar deixar centralizado da cuba para a parte seca;
+6.2.1) Deixar no mínimo de 15 a 20 cm da cuba para parte seca;
+6.2) Se a pessoa tiver cooktop, pedir para levar;
+6.3) Entre a parte seca e a parte molhada tem obrigatoriamente uma guarnição;
+
+
+7) Por padrão a guarnição externa é 5cm, se a pessoa tiver uma ideia diferente, então, vai ser o tamanho que a pessoa pediu.
+
+
+8) Calculando tudo:
+8.1) Calculando a área
+8.1.1) Largura: Guarnições/Espelhos + largura
+8.1.2) Profundidade: Espelho + profundidade + guarnição
+8.2) Multiplicar o metro quadrado da pedra pela área
+
+8.3) Acrescentar o valor que quiser;
+
+8.4) Desconto de 10% se pagar a vista;
+8.5) Parcelar em até 18 vezes sem juros
+
+
+
