@@ -1,8 +1,6 @@
 import os
-from funcoes import cadastroArea
-from funcoes import formatacoes
-
-
+import cadastroArea
+import formatacoes
 
 
 while True:
