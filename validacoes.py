@@ -11,6 +11,7 @@ def numeroReal(validando):
 
     return numeroResultado
 
+
 def numeroMenuPrincipal():
     while True:
         try:
@@ -23,5 +24,21 @@ def numeroMenuPrincipal():
         except Exception as erro:
             formatacoes.titulo('INVÁLIDO!')
             print('Você digitou uma opção inválida. Tente novamente!')
+    
+    return numeroDigitado
+
+
+def numeroLadosParede(mensagem):
+    while True:
+        try:
+            numeroDigitado = int(input(f'{mensagem}'))
+            if (numeroDigitado == 1) or (numeroDigitado == 2) or (numeroDigitado == 3):
+                break
+            else:
+                print(f'NÚMERO INVÁLIDO!')
+                print('Somente são aceitos os valores 1, 2 ou 3') 
+        except Exception as erro:
+            print(f'NÚMERO INVÁLIDO!')
+            print('Somente são aceitos os valores 1, 2 ou 3')
     
     return numeroDigitado
