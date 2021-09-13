@@ -42,3 +42,30 @@ def numeroLadosParede(mensagem):
             print('Somente são aceitos os valores 1, 2 ou 3')
     
     return numeroDigitado
+
+
+def numeroEspelhos(mensagem, ladosParede):
+    while True:
+        try:
+            numeroDigitado = int(input(f'{mensagem}'))
+            if (numeroDigitado <= ladosParede):
+                break
+            else:
+                print(f'QUANTIDADE INVÁLIDA!')
+                print(f'Deve ter {ladosParede} espelhos ou menos.')
+        except Exception as erro:
+            print(f'ERRO! Digite um númeor válido')
+    
+    return numeroDigitado
+
+
+def numeroInteiro(mensagem):
+    while True:
+        try:
+            numeroDigitado = int(input(f'{mensagem}'))
+            if numeroDigitado > 0:
+                break
+        except Exception as erro:
+            print(f'Digite um número inteiro válido! Tente novamente.')
+
+    return numeroDigitado
