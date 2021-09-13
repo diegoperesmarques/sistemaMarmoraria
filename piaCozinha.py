@@ -8,6 +8,7 @@ def piaReta():
     largura = validacoes.numeroReal('Digite a largura (m): ')
     profundidade = validacoes.numeroReal('Digite a profundidade (m): ')
     ladosParede = validacoes.numeroLadosParede('Quantos lados tocam a parede? ')
+    quantidadeGuanicao = 4 - ladosParede 
     numeroEspelhos = validacoes.numeroEspelhos('Quantos espelhos? ', ladosParede)
 
     perguntaTamEspelho = input('Espelho terá tamanho padrão? [S/N]').strip().upper()[0]
@@ -25,5 +26,6 @@ def piaReta():
     print(f'Lados parede: {ladosParede}')
     print(f'Número de espelhos: {numeroEspelhos}')
     print(f'Tamanho do espalho: {tamanhoEspelho}')
+    print(f'Quantidade de guanições: {quantidadeGuanicao}')
 
     input('Pressione enter para voltar ao Menu anterior')
