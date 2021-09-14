@@ -20,9 +20,9 @@ def piaReta():
     tipoApoioPia = input('A pia é CHUMBADA ou APOIADA? ').upper().strip()
     if tipoApoioPia == "CHUMBADA":
         tamanhoApoioPia = 2
-        tamanhoPadrao = input(f'Vai deixar com {tamanhoApoioPia} cm ou será outro valor [S/N]? ').upper().strip()[0]
+        tamanhoPadrao = input(f'A pia vai entrar {tamanhoApoioPia} cm ou será outro valor [S/N]? ').upper().strip()[0]
         if tamanhoPadrao == "N":
-            tamanhoApoioPia = validacoes.numeroInteiro('Qual o espaçamento da pia com a parede? ')
+            tamanhoApoioPia = validacoes.numeroInteiro('Qual o tamanho da entrada da pia na parede? ')
     else:
         tamanhoApoioPia = 0
 
