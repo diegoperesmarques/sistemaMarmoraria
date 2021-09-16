@@ -26,6 +26,24 @@ def piaReta():
     else:
         tamanhoApoioPia = 0
 
+    print('')
+    valorCubaPadrao = 300
+    temCuba = input('Tem cuba [S/N]? ').upper().strip()
+    if temCuba == 'S':
+        print('Informar ao cliente que tem que trazer a cuba para medição')
+    else:
+        compraCuba = input(f'Gostaria de comprar nossa cuba, custa R$ {valorCubaPadrao} [S/N]? ').upper().strip()
+        if compraCuba == 'S':
+            print(''' 
+                Escolha o tipo de cuba abaixo:
+                1 - Pequena
+                2 - Média 
+                3 - Grande
+            ''')
+            tipoDeCuba = validacoes.numeroInteiro('Digite o tipo: ')
+        else:
+            print('Quando comprar a cuba, traga na loja para a medição na pedra')
+
     area = float(largura) * float(profundidade)
 
     formatacoes.titulo('Resultado')
