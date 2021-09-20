@@ -11,7 +11,7 @@ def piaReta():
     quantidadeGuanicao = 4 - ladosParede 
     numeroEspelhos = validacoes.numeroEspelhos('Quantos espelhos? ', ladosParede)
 
-    perguntaTamEspelho = input('Espelho terá tamanho padrão [S/N]? ').strip().upper()[0]
+    perguntaTamEspelho = validacoes.validacaoSN('Espelho terá tamanho padrão [S/N]? ')
     if perguntaTamEspelho == 'N':
         tamanhoEspelho = validacoes.numeroInteiro('Qual será o tamanho do espelho (cm)? ')
     else:

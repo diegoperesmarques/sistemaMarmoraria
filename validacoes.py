@@ -69,3 +69,14 @@ def numeroInteiro(mensagem):
             print(f'Digite um número inteiro válido! Tente novamente.')
 
     return numeroDigitado
+
+
+def validacaoSN(mensagem):
+    resultadoSN = input((f'{mensagem}')).upper().strip()[0]
+    while resultadoSN not in 'SsNs':
+        print('')
+        print('Valor incorreto!')
+        print('Digite apenas S ou N')
+        resultadoSN = input((f'{mensagem}')).upper().strip()[0]
+    
+    return resultadoSN
