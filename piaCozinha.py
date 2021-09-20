@@ -33,16 +33,17 @@ def piaReta():
         print('Informar ao cliente que tem que trazer a cuba para medição')
     else:
         compraCuba = input(f'Gostaria de comprar nossa cuba, custa R$ {valorCubaPadrao} [S/N]? ').upper().strip()
+        listaCubas = ['', 'Pequena', 'Média', 'Grande']
         if compraCuba == 'S':
-            print(''' 
+            print(f''' 
                 Escolha o tipo de cuba abaixo:
                 1 - Pequena
-                2 - Média 
+                2 - Média
                 3 - Grande
             ''')
-            tipoDeCuba = validacoes.numeroInteiro('Digite o tipo: ')
+            tipoDeCuba = listaCubas[validacoes.numeroInteiro('Digite o tipo: ')]
         else:
-            print('Quando comprar a cuba, traga na loja para a medição na pedra')
+            print('Informar ao cliente que tem que trazer a cuba para medição')
 
     area = float(largura) * float(profundidade)
 
@@ -51,9 +52,22 @@ def piaReta():
     print(f'Profundidade: {profundidade}')
     print(f'Área: {area}')
     print(f'Lados parede: {ladosParede}')
+
+    print('')
     print(f'Número de espelhos: {numeroEspelhos}')
-    print(f'Tamanho do espalho: {tamanhoEspelho}')
+    print(f'Tamanho do espelho: {tamanhoEspelho}')
     print(f'Quantidade de guanições: {quantidadeGuanicao}')
+
+    print('')
     print(f'Espaçamento pia da parede: {tamanhoApoioPia}')
+
+
+    if temCuba == 'S':
+        print('O clinte tem cuba')
+    elif temCuba == 'N':
+        if compraCuba == 'S':
+            print(f'O cliente vai comprar a cuba {tipoDeCuba}')
+        else:
+            print('O cliente ainda vai realizar a compra da cuba')
 
     input('Pressione enter para voltar ao Menu anterior')
