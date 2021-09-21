@@ -18,11 +18,11 @@ def numeroMenuPrincipal():
             numeroDigitado = int(input('Digite a opção válida: '))
             if (numeroDigitado == 1) or (numeroDigitado == 2) or (numeroDigitado == 999):
                 break
-            formatacoes.titulo('INVÁLIDO!')
+            formatacoes.titulo('AVISO!')
             print('Você digitou uma opção inválida. Tente novamente!')
 
         except Exception as erro:
-            formatacoes.titulo('INVÁLIDO!')
+            formatacoes.titulo('AVISO!')
             print('Você digitou uma opção inválida. Tente novamente!')
     
     return numeroDigitado
@@ -35,10 +35,10 @@ def numeroLadosParede(mensagem):
             if (numeroDigitado == 1) or (numeroDigitado == 2) or (numeroDigitado == 3):
                 break
             else:
-                print(f'NÚMERO INVÁLIDO!')
+                formatacoes.titulo(f'AVISO!')
                 print('Somente são aceitos os valores 1, 2 ou 3') 
         except Exception as erro:
-            print(f'NÚMERO INVÁLIDO!')
+            formatacoes.titulo(f'AVISO!')
             print('Somente são aceitos os valores 1, 2 ou 3')
     
     return numeroDigitado
@@ -51,7 +51,7 @@ def numeroEspelhos(mensagem, ladosParede):
             if (numeroDigitado <= ladosParede):
                 break
             else:
-                print(f'QUANTIDADE INVÁLIDA!')
+                formatacoes.titulo(f'QUANTIDADE INVÁLIDA!')
                 print(f'Deve ter {ladosParede} espelhos ou menos.')
         except Exception as erro:
             print(f'ERRO! Digite um númeor válido')
@@ -75,8 +75,20 @@ def validacaoSN(mensagem):
     resultadoSN = input((f'{mensagem}')).upper().strip()[0]
     while resultadoSN not in 'SsNs':
         print('')
-        print('Valor incorreto!')
+        formatacoes.titulo('AVISO!')
         print('Digite apenas S ou N')
         resultadoSN = input((f'{mensagem}')).upper().strip()[0]
     
     return resultadoSN
+
+
+def apoiadaChumbada(mensagem):
+    while True:
+        valorDigitado = input(f'{mensagem}').upper().strip()
+        if (valorDigitado == 'CHUMBADA') or (valorDigitado == 'APOIADA'):
+            break
+        else:
+            formatacoes.titulo('AVISO!')
+            print('Digite apenas CHUMBADA ou APOIADA')
+        
+    return valorDigitado

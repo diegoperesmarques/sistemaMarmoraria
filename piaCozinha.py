@@ -17,7 +17,7 @@ def piaReta():
     else:
         tamanhoEspelho = 8
 
-    tipoApoioPia = input('A pia é CHUMBADA ou APOIADA? ').upper().strip()
+    tipoApoioPia = validacoes.apoiadaChumbada('A pia é CHUMBADA ou APOIADA? ')
     if tipoApoioPia == "CHUMBADA":
         tamanhoApoioPia = 2
         tamanhoPadrao = input(f'A pia vai entrar {tamanhoApoioPia} cm ou será outro valor [S/N]? ').upper().strip()[0]
@@ -28,7 +28,7 @@ def piaReta():
 
     print('')
     valorCubaPadrao = 300
-    temCuba = input('Tem cuba [S/N]? ').upper().strip()
+    temCuba = validacoes.validacaoSN('Tem cuba [S/N]? ')
     if temCuba == 'S':
         print('Informar ao cliente que tem que trazer a cuba para medição')
     else:
