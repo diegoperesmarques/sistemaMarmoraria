@@ -45,6 +45,27 @@ def piaReta():
         else:
             print('Informar ao cliente que tem que trazer a cuba para medição')
 
+
+    temPontoAgua = validacoes.validacaoSN('Já tem ponto de água [S/N]? ')
+    pontoAguaCentralizado = distanciaPontoAgua = distanciaCuba = 0
+    if temPontoAgua == 'S':
+        pontoAguaCentralizado = validacoes.validacaoSN('Cuba pode ser centralizada com o ponto de água? [S/N] ')
+        if pontoAguaCentralizado == 'S':
+            distanciaPontoAgua = validacoes.numeroInteiro('Qual a distância da extremidade até o ponto? ')
+            distanciaCuba = distanciaPontoAgua
+        else:
+            distanciaPontoAgua = validacoes.numeroInteiro('Qual a distância da extermidade até o ponto de água? ')
+            distanciaCuba = validacoes.numeroInteiro('Qual a distância da extermidade até a cuba? ')
+    else: 
+        print('Informar que é necessário saber a distância do ponto de água para o orçamento')
+
+
+
+
+
+
+
+
     area = float(largura) * float(profundidade)
 
     formatacoes.titulo('Resultado')
@@ -69,5 +90,18 @@ def piaReta():
             print(f'O cliente vai comprar a cuba {tipoDeCuba}')
         else:
             print('O cliente ainda vai realizar a compra da cuba')
+
+    print('')
+    if temPontoAgua == 'S':
+        if pontoAguaCentralizado == 'S':
+            print('O ponto de águe é centralizado com a cuba')
+            print(f'Na distância de {distanciaPontoAgua} cm')
+        else:
+            print('O ponto de água não é centralizado com a cuba!')
+            print(f'Ponto de água: {distanciaPontoAgua} cm')
+            print(f'Cuba: {distanciaCuba} cm')
+    else:
+        print('O cliente não tem ponto de água')
+
 
     input('Pressione enter para voltar ao Menu anterior')
