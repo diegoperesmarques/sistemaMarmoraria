@@ -1,6 +1,11 @@
 import formatacoes
 
 def numeroReal(validando):
+    """
+    Retorna o número real digitado, se for digitado algo diferente
+    retorna uma mensagem de erro para o usuário digitar novamente.
+    :param validando: número digitado pelo usuário
+    """
     while True:
         numeroResultado = input(f'{validando}').strip().replace(',','.')
         if (float(numeroResultado)):
