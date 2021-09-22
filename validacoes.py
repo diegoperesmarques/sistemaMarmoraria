@@ -18,6 +18,11 @@ def numeroReal(validando):
 
 
 def numeroMenuPrincipal():
+    """
+    Função utilizada para validar o número do inserido para navegador do 
+    menu principal do programa. Se for digitado qualquer coisa diferente
+    é retornada uma mensagem de erro e uma nova tentativa para o usuário
+    """
     while True:
         try:
             numeroDigitado = int(input('Digite a opção válida: '))
