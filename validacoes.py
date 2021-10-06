@@ -39,6 +39,10 @@ def numeroMenuPrincipal():
 
 
 def numeroLadosParede(mensagem):
+    """
+    Função para validar o número de lados da parede da pia
+    :param mensagem: mensagem que será exibido na mensagem ao usuário
+    """
     while True:
         try:
             numeroDigitado = int(input(f'{mensagem}'))
