@@ -59,6 +59,14 @@ def numeroLadosParede(mensagem):
 
 
 def numeroEspelhos(mensagem, ladosParede):
+    """
+    Função para validar o número de espelhos de acordo com o
+    número de lados que tocam a parede. O número de espelho
+    tem que ser igual ou menor o número de lados que tocam
+    a parede
+    :param mensagem: mensagem para exibido ao usuário
+    :param ladosParede: Número inteiro com os lados a parede
+    """
     while True:
         try:
             numeroDigitado = int(input(f'{mensagem}'))
